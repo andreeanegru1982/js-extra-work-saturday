@@ -17,6 +17,20 @@
 
    alert(`${prevNr}, ${inputNr}, ${nextNr} `);
 
+   alert('The opposite of ' + inputNr + ' is: ' + -inputNr);
+
+   //alert('The opposite of' + inputNr + 'is: ' + -inputNr);
+
+   alert('The remainder of' + inputNr + 'divided by 2 is: ' +inputNr % 2);
+
+    
+
+   alert('2 to the power of' + inputNr + 'equals' + 2**inputNr);
+   //alert('2 to the power of' &{inputNr}  'equals' &[2**inputNr});
+   
+
+
+
 
 
 
