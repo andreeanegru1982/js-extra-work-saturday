@@ -13,21 +13,17 @@
    let prevNr = inputNr - 1;
    let nextNr = inputNr + 1;
 
-   //alert('The sequance numbers'prevNr + ',' + inputNr + ',' + nextNr);
+alert('The numbers sequece: ' + prevNr + ', ' + inputNr + ', ' + nextNr);
+// alert(`The numbers sequence: ${prevNr}, ${inputNr}, ${nextNr}`);
 
-   alert(`${prevNr}, ${inputNr}, ${nextNr} `);
+alert('The opposite of ' + inputNr + ' is: ' + -inputNr);
+// alert(`The opposite of ${inputNr} is: ${-inputNr}`);
 
-   alert('The opposite of ' + inputNr + ' is: ' + -inputNr);
+alert('The remainder of ' + inputNr + ' divided by 2 is: ' + inputNr % 2);
+// alert(`The remainder of ${inputNr} divided by 2 is: ${inputNr % 2}`);
 
-   //alert('The opposite of' + inputNr + 'is: ' + -inputNr);
-
-   alert('The remainder of' + inputNr + 'divided by 2 is: ' +inputNr % 2);
-
-    
-
-   alert('2 to the power of' + inputNr + 'equals' + 2**inputNr);
-   //alert('2 to the power of' &{inputNr}  'equals' &[2**inputNr});
-   
+alert(`2 to the power of ` + inputNr + ` equals: ` + 2**inputNr);
+// alert(`2 to the power of ${inputNr} equals: ${2**inputNr}`);
 
 
 
