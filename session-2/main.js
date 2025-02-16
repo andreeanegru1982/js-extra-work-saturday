@@ -1,9 +1,10 @@
 console.log('Survivor Game');
 
 const playerName = prompt(`Input a player's name:`);
-const huntingSkill = Number(prompt(`Input the player's hunting skill (0 to 10)`));
-const survivalDays = 10;
+let huntingSkill = Number(prompt(`Input the player's hunting skill (0 to 10)`));
+const survivalDays = 100;
 let daysCount = 1;
+let hitPoints = 100;
 
 while(daysCount <= survivalDays){
     console.log('');
@@ -15,11 +16,37 @@ while(daysCount <= survivalDays){
 
 
     if (diceRoll <= huntingSkill){
-        console.log(`${playerName} Finds Food!😁 `);
+        console.log(`${playerName} Finds Food!🍖 `);
+        hitPoints += 10;
+        console.log(`${playerName} has gained 10 points.The current count is ${hitPoints}`);
+        
     }
     else{
-        console.log(`${playerName} Is starving...🩻`);
+        console.log(`${playerName} Is starving...😵‍💫`);
+        hitPoints -= 10;
+        console.log(`${playerName} has lost 10 points. The current count is ${hitPoints}`);
+        
+    }
+
+    if (hitPoints <= 30 && !skillReduced) {
+        if (huntingSkill > 0) {
+            huntingSkill -= 1;
+            skillReduced = true;
+            console.log(`You haven't eaten well for a while, your hunting skill goes down to ${huntingSkill}.`);
+        }
+    } else if (hitPoints > 50) {
+        skillReduced = false; // Reset the flag if health improves
+    }
+
+    if(hitPoints <= 0){
+        console.log(`My friend ${playerName}, you've lost all your points...You are dead!🩻`)
+        break;
     }
 
     daysCount++;
+      
+}
+
+if(hitPoints > 0){
+    console.log(`Congratulation, ${playerName} you've survived the challenge and gained ${hitPoints} points.🎉`)
 }
