@@ -1,0 +1,12 @@
+#count-down{
+    height: 100px;
+    width: 150px;
+    margin: auto;
+    border: 5px solid;
+    text-align: center;
+}
+
+p{
+    font-weight: bold;
+    
+}
