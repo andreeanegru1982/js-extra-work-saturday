@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "name": "Andreea",
+      "location": "Cluj",
+      "hobbies": [
+        "reading",
+        "skiing",
+        "cooking"
+      ],
+      "rating": 3,
+      "available": true,
+      "id": 1
+    },
+    {
+      "name": "Sofia",
+      "location": "Cluj",
+      "hobbies": [
+        "reading",
+        "drawing",
+        "roblox",
+        "play"
+      ],
+      "rating": 4.56,
+      "available": true,
+      "id": 2
+    },
+    {
+      "name": "Sara",
+      "location": "Cluj",
+      "hobbies": [
+        "reading",
+        "drawing"
+      ],
+      "rating": 4.5,
+      "available": true,
+      "id": 3
+    }
+  ]
+}
