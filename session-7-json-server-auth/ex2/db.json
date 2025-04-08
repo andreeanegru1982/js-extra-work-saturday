@@ -17,9 +17,14 @@
   ],
   "messages": [
     {
-      "message": "hello my old friend",
-      "userId": 1,
+      "message": "Change And's message",
+      "userId": 2,
       "id": 1
+    },
+    {
+      "message": "I am Sofia",
+      "userId": 2,
+      "id": 2
     }
   ]
 }
