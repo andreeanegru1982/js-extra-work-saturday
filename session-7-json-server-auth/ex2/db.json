@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "email": "andreea@webcomplete.com",
+      "password": "$2a$10$KYCjjs6flmJWa7yqVn7RQuDZLJrMFKke1t2eGjyMf5N5CC8EVPKja",
+      "name": "Andreea",
+      "Location": "Cluj",
+      "id": 1
+    },
+    {
+      "email": "sofia@webcomplete.com",
+      "password": "$2a$10$7zlwI7gX0Or5z/ZcfhcKxulncOd/Aewd/tRFopYZi3F8fxWXj5Dji",
+      "name": "Sofia",
+      "Location": "Cluj",
+      "id": 2
+    }
+  ],
+  "messages": [
+    {
+      "message": "hello my old friend",
+      "userId": 1,
+      "id": 1
+    }
+  ]
+}
