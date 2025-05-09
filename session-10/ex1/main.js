@@ -26,11 +26,11 @@ getEventsBtn.addEventListener('click', () => {
     }
 
     getHistoricalEvents(apiKey, requestOptions)
-    .then(data => {
-        console.log(data);
-        displayHistoricalEvents(parentElement, data);
-    })
-    .catch(error => console.log(error))
+        .then(data => {
+            console.log(data);
+            displayHistoricalEvents(parentElement, data);
+        })
+        .catch(error => console.log(error))
 
     document.querySelector('#year').value = '';
     document.querySelector('#month').value = '';
