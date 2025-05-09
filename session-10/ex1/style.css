@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+#list {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#ol-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#ol-list li {
+    background-color: #f1f1f1;
+    border-left: 5px solid #3498db;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#ol-list li:hover {
+    background-color: #e3e3e3;
+}
+
+#ol-list li::before {
+    content: "📜";
+    margin-right: 8px;
+}
+
+.event-year, .event-month, .event-day {
+    font-weight: bold;
+    color: #555;
+    margin-right: 5px;
+}
+
+.event-text {
+    display: block;
+    margin-top: 5px;
+    font-size: 1rem;
+    color: #333;
+}
