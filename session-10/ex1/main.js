@@ -2,12 +2,42 @@ console.log('Historical event');
 
 const apiKey = 'Cyrks1o/4EilPs2PAy/cCg==Zt893I3oMkEeY0hO';
 
-const requestOptions = {
-    year: 1982,
-    month: '',
-    day: '',
-    text: ''
-}
+// const requestOptions = {
+//     year: 1492,
+//     month: '',
+//     day: '',
+//     text: ''
+// }
+
+const getEventsBtn = document.querySelector('#get-events-btn');
+
+getEventsBtn.addEventListener('click', () => {
+    
+    const year = document.querySelector('#year').value;
+    const month = document.querySelector('#month').value;
+    const day = document.querySelector('#day').value;
+    const text = document.querySelector('#event').value;
+
+    const requestOptions = {
+        year: year,
+        month: month,
+        day: day,
+        text: text
+    }
+
+    getHistoricalEvents(apiKey, requestOptions)
+    .then(data => {
+        console.log(data);
+        displayHistoricalEvents(parentElement, data);
+    })
+    .catch(error => console.log(error))
+
+    document.querySelector('#year').value = '';
+    document.querySelector('#month').value = '';
+    document.querySelector('#day').value = '';
+    document.querySelector('#event').value = '';
+
+})
 
 function getHistoricalEvents(apiKey, requestOptions) {
     // Step 1: Validate requestOptions
@@ -48,12 +78,12 @@ function getHistoricalEvents(apiKey, requestOptions) {
     });
 }
 
-getHistoricalEvents(apiKey, requestOptions)
-    .then(data => {
-        console.log(data);
-        displayHistoricalEvents(parentElement, data);
-    })
-    .catch(error => console.log(error))
+// getHistoricalEvents(apiKey, requestOptions)
+//     .then(data => {
+//         console.log(data);
+//         displayHistoricalEvents(parentElement, data);
+//     })
+//     .catch(error => console.log(error))
 
 // const eventList = [
 //     {
@@ -107,12 +137,12 @@ function displayHistoricalEvents(parentElement, eventsList){
         ol.appendChild(li);
 
         const yearSpan = document.createElement('span');
-        yearSpan.textContent = `${event.year}  `;
+        yearSpan.textContent = `${event.year} - `;
         yearSpan.classList.add('event-year');
         li.append(yearSpan);
 
         const monthSpan = document.createElement('span');
-        monthSpan.textContent = `${event.month}  `;
+        monthSpan.textContent = `${event.month} - `;
         monthSpan.classList.add('event-month');
         li.append(monthSpan);
 
@@ -127,6 +157,7 @@ function displayHistoricalEvents(parentElement, eventsList){
         li.append(eventSpan);
 
     })
-
-
 } 
+
+
+// https://github.com/andreeanegru1982/js-extra-work-saturday/tree/8ee663d0533eb1073a6ff5cbfbd5aca8e4bae49f/session-10/ex1

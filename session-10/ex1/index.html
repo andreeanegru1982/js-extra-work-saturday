@@ -1,17 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>API</title>
     <script src="main.js" defer></script>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <h1>API Historical Events</h1>
-    <h2>List of historical events</h2>
-    <div id="list">
-        
+    <div id="events-request">
+      <div class="data-req">
+        <label for="year">Year:</label>
+        <input type="text" id="year" />
+      </div>
+
+      <div class="data-req">
+        <label for="month">Month:</label>
+        <input type="text" id="month" />
+      </div>
+
+      <div class="data-req">
+        <label for="day">Day:</label>
+        <input type="text" id="day" />
+      </div>
+
+      <div class="data-req">
+        <label for="event">Text:</label>
+        <input type="text" id="event" />
+      </div>
+
+      <button id="get-events-btn">Get events</button>
     </div>
-</body>
+
+    <h2>List of historical events</h2>
+    <div id="list"></div>
+  </body>
 </html>
