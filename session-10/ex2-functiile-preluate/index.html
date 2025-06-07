@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API functii preluate</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>API Historical Events</h1>
+    <form id="request-form">
+        <div class="data-req">
+            <label for="year">Year:</label>
+            <input type="text" name="year" id="year" />
+          </div>
+    
+          <div class="data-req">
+            <label for="month">Month:</label>
+            <input type="text" name="month" id="month" />
+          </div>
+    
+          <div class="data-req">
+            <label for="day">Day:</label>
+            <input type="text" name="day" id="day" />
+          </div>
+    
+          <div class="data-req">
+            <label for="event">Text:</label>
+            <input type="text" name="text" id="event" />
+          </div>
+    
+          <button id="get-events-btn">Get events</button>
+    </form>
+
+    <h2>List of historical events</h2>
+    <div id="list"></div>
+  </body>
+</html>

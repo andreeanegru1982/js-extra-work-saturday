@@ -2,13 +2,6 @@ console.log('Historical event');
 
 const apiKey = 'Cyrks1o/4EilPs2PAy/cCg==Zt893I3oMkEeY0hO';
 
-// const requestOptions = {
-//     year: 1492,
-//     month: '',
-//     day: '',
-//     text: ''
-// }
-
 const getEventsBtn = document.querySelector('#get-events-btn');
 
 getEventsBtn.addEventListener('click', () => {
@@ -77,34 +70,6 @@ function getHistoricalEvents(apiKey, requestOptions) {
         return response.json();
     });
 }
-
-// getHistoricalEvents(apiKey, requestOptions)
-//     .then(data => {
-//         console.log(data);
-//         displayHistoricalEvents(parentElement, data);
-//     })
-//     .catch(error => console.log(error))
-
-// const eventList = [
-//     {
-//         "year": "1200",
-//         "month": "05",
-//         "day": "22",
-//         "event": "King John of England and King Philip II of France sign the Treaty of Le Goulet."
-//     },
-//     {
-//         "year": "1200",
-//         "month": "08",
-//         "day": "24",
-//         "event": "King John of England, signer of the first Magna Carta, marries Isabella of Angoul\u00eame in Angoul\u00eame Cathedral."
-//     },
-//     {
-//         "year": "1200",
-//         "month": "10",
-//         "day": "08",
-//         "event": "Isabella of Angoul\u00eame is crowned Queen consort of England."
-//     }
-// ]
 
 const parentElement = document.querySelector('#list');
 
